@@ -1,12 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134418339-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-134418339-2');
+        </script>
+        <link rel="icon" href="https://www.flaticon.com/premium-icon/icons/svg/2272/2272643.svg" type="image/gif"
+            sizes="16x16" />
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+            integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+            crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Google+Sans+Display:wght@300;400;700&display=swap"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HamadMoniem</title>
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            * {
+                margin: 0;
+            }
+
+            body {
+                background-color: #222831;
+
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                overflow-x: hidden;
+            }
+
+            .identifiers>h1 {
+                /*text-shadow: 0 0 10px #fff, 0 0 12px #fff, 0 0 14px #e60073, 0 0 16px #e60073, 0 0 50px #e60073, 0 0 18px #e60073, 0 0 20px #e60073;*/
+                opacity: 1;
+                font-weight: 400;
+                font-size: 8vw;
+                color: #EEEEEE;
+                text-align: left;
+                position: relative;
+            }
+
+            .identifiers {
+                width: fit-content;
+                position: relative;
+                top: 83%;
+                margin-left: 70px;
+            }
+
+            .identifiers>h4 {
+                opacity: 1;
+                font-size: 20px;
+                color: #bdc3c7;
+                font-weight: 700;
+            }
+
+            #particles {
+                background-attachment: fixed;
+                cursor: pointer;
+                font-family: 'Poppins', sans-serif;
+                height: 120vh;
+                position: relative;
+                margin-top: -400px;
+            }
+
+            .about {
+                margin-left: 70px;
+                margin-top: 34vh;
+                color: red;
+                margin-bottom: 30vh;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header class="header" id="particles">
+            <div class="identifiers">
+                <h1 class="one rellax" data-rellax-speed="10" data-aos="fade-up">Mohammad</h1>
+                <h1 class="one rellax" data-rellax-speed="8" data-aos="fade-up">Abd-Elmoniem<span
+                        style="font-size:20vh;">.</span></h1>
+                <h4 class="one rellax" data-rellax-speed="6" data-aos="fade-up">"I have no special talents. I am only
+                    passionately curious." - Albert Einstien
+                </h4>
+
+            </div>
+            <div class="box1 rellax one pulse" id="box" data-rellax-speed="10"></div>
+
+        </header>
+
+
+        <div class="about">
+            <h1 data-aos="fade-up-right">Hello</h1>
+        </div>
+
+        <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script>
+
+            particlesJS("particles", {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#81ecec"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#a2dede"
+                        },
+                        "polygon": {
+                            "nb_sides": 0
+                        },
+
+                    },
+                    "opacity": {
+                        "value": 1,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": true
+                        }
+                    },
+                    "size": {
+                        "value": 4,
+
+
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 200,
+                        "color": "#a2dede",
+                        "opacity": 0.1  ,
+                        "width": 50
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 150,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+
+            requestAnimationFrame();
+
+
+        </script>
+        <script>
+            var rellax = new Rellax('.rellax');
+
+
+        </script>
+    </body>
+
 </html>
