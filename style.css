@@ -71,7 +71,7 @@ body {
 }
 
 .aboutMeImage {
-    margin-top: 7vh;
+    margin-top: 17vh;
 }
 
 ::-webkit-scrollbar {
@@ -117,7 +117,7 @@ body {
 
 .title,
 .aboutMeImage {
-    padding-top: 22vh;
+    padding-top: 10vh;
 }
 
 body,
