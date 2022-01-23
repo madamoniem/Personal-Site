@@ -1,32 +1,71 @@
-html {}
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #222831;
+}
+
+.workrow1{
+    scroll-snap-align: center;
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #10ac84;
+    border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: #10ac84;
+}
 
 * {
     margin: 0;
 }
 
+body,
+* {
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1{
+  font-family: 'Dongle', sans-serif;  
+}
+
+
 body {
     background-color: #222831;
-
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     overflow-x: hidden;
 }
 
-.identifiers>h1 {
+.fname, .lname{
     /*text-shadow: 0 0 10px #fff, 0 0 12px #fff, 0 0 14px #e60073, 0 0 16px #e60073, 0 0 50px #e60073, 0 0 18px #e60073, 0 0 20px #e60073;*/
     opacity: 1;
     font-weight: 600;
-    font-size: 8vw;
+    font-size: 14vw;
+    line-height: 0.8em;
+
     color: #EEEEEE;
     text-align: left;
     position: relative;
 }
 
-.identifiers {
-    position: relative;
-    top: 60%;
-    padding-left: 15vw;
+.headersection{
+  scroll-snap-align: start;
+}
+ .aboutsection, .worksection, .certificationsection{
+    margin-left: 15vw;
+    height: 100vh;
+    scroll-snap-align: start;
 }
 
 .identifiers>h4 {
@@ -38,21 +77,22 @@ body {
 }
 
 #particles {
-    font-family: '#10ac84', serif;
-    background-attachment: fixed;
+    background-attachment:scroll;
     cursor: pointer;
-    height: 130vh;
-    position: relative;
-    margin-top: -430px;
+    position: absolute;
+    height: 100vh;
 }
-
-
+.headercontent{
+  width: fit-content;
+  position: relative;
+  left: 15vh;
+  top: 30%;
+}
 
 .title {
     color: #dfe6e9;
     font-weight: 600;
     font-family: 'Vidaloka', serif;
-
 }
 
 .aboutMeText {
@@ -67,61 +107,46 @@ body {
 .BottomRightImage {
     position: absolute;
     bottom: 400;
-
 }
 
-.aboutMeImage {
-    margin-top: 20vh;
+section{
+    height: 100vh;
+    color: white;
 }
 
-::-webkit-scrollbar {
-    width: 15px;
+
+.worksection{
+  margin-right: 15vw;
+  height: 190vh;
+}
+.certificationsection{
+ 
+}
+.certificationcontent{
+  position: relative;
+  top: 10%;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: #222831;
+.workTitle{
+  margin-bottom: 2vh;
 }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #10ac84;
-    border-radius: 30px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    cursor: pointer;
-    background: #10ac84;
-}
-
-.sectionone {
+.workcontent{
     position: relative;
-    height: 100vh;
+    top: 05%;
+    margin-right: 10vh;
 }
-
-.sectiontwo {
-    height: 100vh;
+.aboutMeTitle{
+    margin-top: 24vh;
 }
-
-.sectionone,
-.sectiontwo {
-    scroll-snap-align: center;
+.sectiontitle{
+  font-size: 100px;
+  line-height: 0.5em;
 }
-
-.aboutrow {
-    margin-left: 15vw;
-    margin-bottom: 30vh;
-    width: 100vw;
+.aboutMeParagraph{
+    font-family: 'Poppins', serif;
+    text-align: justify;
+    font-size: large;
 }
-
-.title,
-.aboutMeImage {
-    padding-top: 10vh;
-}
-
-body,
-* {
-    scroll-snap-type: y mandatory;
-    -webkit-overflow-scrolling: touch;
+.aboutMeImage{
+    margin-top: 26vh;
 }
