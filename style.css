@@ -1,3 +1,5 @@
+
+
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -28,7 +30,7 @@
 
 body,
 * {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -49,9 +51,8 @@ body {
     /*text-shadow: 0 0 10px #fff, 0 0 12px #fff, 0 0 14px #e60073, 0 0 16px #e60073, 0 0 50px #e60073, 0 0 18px #e60073, 0 0 20px #e60073;*/
     opacity: 1;
     font-weight: 600;
-    font-size: 16vw;
+    font-size: 18vw;
     line-height: 0.7em;
-
     color: #EEEEEE;
     text-align: left;
     position: relative;
@@ -59,11 +60,14 @@ body {
 
 .headersection{
   scroll-snap-align: start;
+  
 }
- .aboutsection, .worksection, .certificationsection, .certificationsection2{
-    margin-left: 15vw;
-    height: 100vh;
+ .aboutsection, .worksection, .certificationsection{
+   margin-left: 10vw;
     scroll-snap-align: start;
+}
+.certificationsection2{
+  margin-left: 10vw;
 }
 
 .identifiers>h4 {
@@ -78,23 +82,24 @@ body {
     background-attachment:scroll;
     cursor: pointer;
     position: absolute;
-    height: 130vh;
+    height: 100vh;
 }
 .headercontent{
-  width: fit-content;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(10px);
+  background-color: rgb(34, 40, 49, 0.1);
+  mix-blend-mode:luminosity;
+  color: white;
+}
+.fname, .lname, .quote{
+  margin-left: 10vw;
   position: relative;
-  left: 15vh;
   top: 30%;
+  opacity: 0.8;
 }
-
-.headercontent>h1, .headercontent>h4{
-    mix-blend-mode:overlay;
-    color: white;
-}
-
 
 .aboutMeText {
-    
     color: #dfe6e9;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
@@ -116,7 +121,6 @@ section{
 
 .worksection{
   margin-right: 15vw;
-  height: 190vh;
 }
 .certificationsection{
     margin-right: 15vw;
@@ -155,7 +159,7 @@ section{
 .aboutMeParagraph{
     font-family: 'Poppins', serif;
     text-align: justify;
-    font-size: large;
+    font-size: 20px ;
 }
 .aboutMeImage{
     margin-top: 26vh;
@@ -263,3 +267,19 @@ section{
     line-height: 0.3em;
   }
   
+  .listelement{
+    font-family: 'Poppins', sans-serif;  
+    width: 50vw;
+  }
+
+  .listelement>h1{
+    font-family: 'Poppins', sans-serif;  
+    font-size: 30px;
+  }
+
+  .listelement>p{
+    font-family: 'Poppins', sans-serif;  
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+ 
