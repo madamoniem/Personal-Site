@@ -47,6 +47,10 @@ body {
     overflow-x: hidden;
 }
 
+footer{
+  font-family: 'Poppins', serif;
+
+}
 .fname, .lname{
     /*text-shadow: 0 0 10px #fff, 0 0 12px #fff, 0 0 14px #e60073, 0 0 16px #e60073, 0 0 50px #e60073, 0 0 18px #e60073, 0 0 20px #e60073;*/
     opacity: 1;
@@ -65,6 +69,10 @@ body {
  .aboutsection, .worksection, .certificationsection{
    margin-left: 10vw;
     scroll-snap-align: start;
+}
+
+.page-footer{
+  scroll-snap-align: start;
 }
 .certificationsection2{
   margin-left: 10vw;
